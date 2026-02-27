@@ -5,7 +5,7 @@ export interface Product {
     category: 'electronics' | 'food' | 'clothing'
 }
 
-export interface cartItem {
+export interface CartItem {
     product: Product;
     quantity: number
 }
