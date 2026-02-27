@@ -1,6 +1,7 @@
-import { Product } from "./types";
-
-export const products: Product[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.products = void 0;
+exports.products = [
     {
         name: "IPhone 12",
         id: 1001,
@@ -38,3 +39,4 @@ export const products: Product[] = [
         category: "clothing",
     }
 ];
+//# sourceMappingURL=products.js.map
