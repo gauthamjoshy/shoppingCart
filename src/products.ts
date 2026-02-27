@@ -35,6 +35,6 @@ export const products: Product[] = [
         name: "Pizza",
         id: 1006,
         price: 100,
-        category: "clothing",
+        category: "food",
     }
 ];
