@@ -12,3 +12,11 @@ export function addToCart (cart: CartItem[], product: Product, quantity: number)
     }
     return cart
 }
+
+// calculate total
+export function calculateTotal (cart: CartItem[]): number{
+    let total = cart.reduce((acc, curr)=>{
+        return acc + (curr.product.price * curr.quantity)
+    }, 0)
+    return total
+}
