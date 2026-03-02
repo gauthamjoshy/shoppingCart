@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addToCart = addToCart;
 exports.calculateTotal = calculateTotal;
+exports.applyDiscount = applyDiscount;
 // add to cart
 function addToCart(cart, product, quantity) {
     const existingItem = cart.find(item => item.product.id === product.id);
@@ -19,5 +20,10 @@ function calculateTotal(cart) {
         return acc + (curr.product.price * curr.quantity);
     }, 0);
     return total;
+}
+// apply discount
+function applyDiscount(total, discountPercentage) {
+    let dPrice = total - (total * discountPercentage) / 100;
+    return dPrice;
 }
 //# sourceMappingURL=cart.js.map

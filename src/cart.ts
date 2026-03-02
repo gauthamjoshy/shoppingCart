@@ -22,3 +22,7 @@ export function calculateTotal (cart: CartItem[]): number{
 }
 
 // apply discount
+export function applyDiscount (total: number, discountPercentage: number): number{
+    let dPrice = total - (total * discountPercentage) / 100
+    return dPrice
+}

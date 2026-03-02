@@ -11,4 +11,7 @@ let cart = [];
 console.log(cart);
 // calculate total
 console.log("The toatal price of all items in the cart is", (0, cart_1.calculateTotal)(cart));
+// apply discount
+let total = (0, cart_1.calculateTotal)(cart);
+console.log("The price after discount is", (0, cart_1.applyDiscount)(total, 10));
 //# sourceMappingURL=index.js.map

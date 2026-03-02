@@ -1,4 +1,4 @@
-import { addToCart, calculateTotal } from "./cart";
+import { addToCart, applyDiscount, calculateTotal } from "./cart";
 import { products } from "./products";
 import { CartItem } from "./types";
 
@@ -18,3 +18,6 @@ console.log(cart);
 console.log("The toatal price of all items in the cart is",calculateTotal(cart));
 
 // apply discount
+let total: number = calculateTotal(cart)
+console.log("The price after discount is", applyDiscount(total, 10));
+
