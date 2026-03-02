@@ -26,3 +26,9 @@ export function applyDiscount (total: number, discountPercentage: number): numbe
     let dPrice = total - (total * discountPercentage) / 100
     return dPrice
 }
+
+//  find items by category
+export function findItemsByCategory (cart: CartItem[], category:string): CartItem[]{
+    let filteredItems = cart.filter(item => item.product.category === category)
+    return filteredItems
+}
