@@ -7,7 +7,7 @@ export function addToCart (cart: CartItem[], product: Product, quantity: number)
     if (!existingItem){
         cart.push({product, quantity})
     }else{
-        quantity += quantity
+        existingItem.quantity += quantity
     }
     return cart
 }
