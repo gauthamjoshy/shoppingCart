@@ -20,3 +20,5 @@ export function calculateTotal (cart: CartItem[]): number{
     }, 0)
     return total
 }
+
+// apply discount

@@ -15,4 +15,6 @@ addToCart(cart, products[0]!, 1)
 console.log(cart);
 
 // calculate total
-console.log(calculateTotal(cart));
+console.log("The toatal price of all items in the cart is",calculateTotal(cart));
+
+// apply discount
