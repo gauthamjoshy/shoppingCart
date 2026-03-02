@@ -1,6 +1,6 @@
 import { CartItem, Product } from "./types";
 
-export function addToCart (cart: CartItem[], product: Product, quantity: number): cartItem[]{
+export function addToCart (cart: CartItem[], product: Product, quantity: number): CartItem[]{
 
     const existingItem = cart.find(item => item.product.id === product.id)
 

@@ -1,6 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.addToCart = addToCart;
 function addToCart(cart, product, quantity) {
+    const existingItem = cart.find(item => item.product.id === product.id);
+    if (!existingItem) {
+        cart.push({ product, quantity });
+    }
+    else {
+        existingItem.quantity += quantity;
+    }
     return cart;
 }
 //# sourceMappingURL=cart.js.map

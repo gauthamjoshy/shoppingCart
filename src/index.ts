@@ -3,7 +3,8 @@ import { products } from "./products";
 import { CartItem } from "./types";
 
 
-console.log(products)
+// console.log(products)
 
 let cart: CartItem[] = []
-console.log(addToCart(cart, products[0]!, 2));
+console.log(addToCart(cart, products[2]!, 1));
+
